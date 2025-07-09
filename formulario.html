@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro em Tabela</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Cadastro de Usuários</h1>
+
+        <form id="user-form">
+            <div class="form-group">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" placeholder="Digite o nome completo" required>
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" placeholder="Digite o e-mail" required>
+            </div>
+            <button type="submit">Adicionar à Tabela</button>
+        </form>
+
+        <hr>
+
+        <h2>Usuários Cadastrados</h2>
+
+        <table id="user-table">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>E-mail</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="user-list-body">
+                <tr>
+                    <td>Usuário de Exemplo</td>
+                    <td>exemplo@email.com</td>
+                    <td><button class="delete-btn">Excluir</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="scriptform.js"></script>
+</body>
+</html>
